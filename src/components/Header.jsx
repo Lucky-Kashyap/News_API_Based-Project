@@ -1,17 +1,21 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate,useNavigate } from "react-router-dom";
 import logo from '../assets/news_4127310.png';
 import './Header.css';
 
 const Header = () => {
-    const [search,setSearch] = useState('');
+    // const [search,setSearch] = useState('');/
 
     const input = useRef(null);
+    const navigate = useNavigate();
 
     const handleSubmit = (e)=>{
         e.preventDefault();
+        const queryData = input.current.value;
+        e.target.reset();
+        return navigate(`/search?q=${queryData}`);
        
-      setSearch(input.current.value);
+    //   setSearch(input.current.value);
 
     }
   return <div>
