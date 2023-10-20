@@ -12,7 +12,7 @@ const Search = () => {
   // const {data : news}= useFetch();
   const fetchData = async () => {
     const data = await fetch(
-      `https://newsapi.org/v2/everything?q=${queryData}&apiKey=${process.env.REACT_APP_API_KEY}`
+      `https://newsapi.org/v2/everything?q=${queryData}&apiKey=98c9bb1fd0ea4e3391414166dfae5c1f`
     );
     const res = await data.json();
     setData(res.articles);
