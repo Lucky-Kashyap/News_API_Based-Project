@@ -15,12 +15,14 @@ const Home = () => {
         setNews(res.articles);
     }
   return (
-    <div className='box'>
+    <div className='container'>
+        <div className='box'>
         {
             news?.map(news=>(
                 <NewsCard news = {news} key={news.id} />
             ))
         }
+        </div>
     </div>
   )
 }
