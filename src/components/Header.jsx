@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/news_4127310.png';
 import './Header.css';
 
 const Header = () => {
+    const [search,setSearch] = useState('');
+
+    const input = useRef(null);
+
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+       
+      setSearch(input.current.value);
+
+    }
   return <div>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container">
@@ -37,9 +47,9 @@ const Header = () => {
         </li>
         
       </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
+      <form className="d-flex" role="search" onSubmit={handleSubmit}>
+        <input className="form-control me-2" type="search" name="search" ref={input} placeholder="Search" aria-label="Search" />
+       
       </form>
     </div>
   </div>
