@@ -9,7 +9,7 @@ const Business = () => {
     });
 
     const fetchData= async()=>{
-        const data = await fetch('https://newsapi.org/v2/top-headlines/sources?category=business&apiKey=98c9bb1fd0ea4e3391414166dfae5c1f');
+        const data = await fetch(`https://newsapi.org/v2/top-headlines/sources?category=business&apiKey=${process.env.REACT_APP_API_KEY}`);
         const res  = await data.json();
 
         setData(res.sources);
