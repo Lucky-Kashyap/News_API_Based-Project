@@ -4,12 +4,13 @@ import NewsCard from './NewsCard';
 
 const Business = () => {
     const [data,setData] = useState([]);
+    const apiKey = import.meta.env.VITE_APP_API_KEY;
     useEffect(()=>{
         fetchData();
     });
 
     const fetchData= async()=>{
-        const data = await fetch('https://newsapi.org/v2/top-headlines/sources?category=business&apiKey=98c9bb1fd0ea4e3391414166dfae5c1f');
+        const data = await fetch(`https://newsapi.org/v2/top-headlines/sources?category=business&apiKey=${apiKey}}`);
         const res  = await data.json();
 
         setData(res.sources);
