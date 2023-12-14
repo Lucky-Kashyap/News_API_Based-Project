@@ -1,4 +1,4 @@
-# News APPlication
+# News Application
 
 Features:
 
@@ -16,6 +16,9 @@ I will not be hosted this application because according to news api docs you can
 - that will be challenging but i'll do it.
 
 Project ShowCase:
+
+![ezgif com-video-to-gif-converted](https://github.com/Lucky-Kashyap/News_API_Based-Project/assets/88204554/466d1929-ff42-429c-940d-be90480b9dbf)
+
 
 Happy Learning! ✨
 
