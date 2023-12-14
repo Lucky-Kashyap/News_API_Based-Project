@@ -1,8 +1,22 @@
-# React + Vite
+# News APPlication
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
 
-Currently, two official plugins are available:
+- Created clean navbar with logo and various category buttons
+- Use News API to fetch data
+- Use category to filter news according to category
+- You can search news on type something on input box
+- Use Bootstrap for creating layout
+- Create Footer bar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I will not be hosted this application because according to news api docs you can't deploy on client side you need server for it basically (Node JS) server it runs.
+
+### It runs locally but i configure it in on server side
+
+- that will be challenging but i'll do it.
+
+Project ShowCase:
+
+Happy Learning! ✨
+
+Made with ☕️ by Divyanshu Kashyap
